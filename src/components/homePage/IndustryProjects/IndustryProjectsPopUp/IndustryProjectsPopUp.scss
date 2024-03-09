@@ -1,0 +1,54 @@
+.modalContainer {
+  .cancelButton {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: none;
+    float: right;
+    margin: 30px;
+    cursor: pointer;
+  }
+  .popup-content {
+    font-size: 18px;
+    padding-inline: 100px 45px;
+    margin-top: 97px;
+    overflow-y: auto;
+    max-height: 634px;
+    z-index: 1;
+    position: absolute;
+    margin-right: 54px;
+  }
+  .popup-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: unset;
+    border-radius: 10px;
+    background: none;
+  }
+  .popup-content::-webkit-scrollbar {
+    width: 10px;
+    background-color: none;
+  }
+
+  .popup-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #dfdfdf;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .modalContainer {
+    .cancelButton {
+      margin: 16px;
+      width: 25px;
+      height: 25px;
+      font-size: 14px;
+    }
+    .popup-content {
+      padding-inline: 20px 0px;
+      margin-right: 20px;
+      font-size: 12px;
+      margin-top: 50px;
+    }
+  }
+}

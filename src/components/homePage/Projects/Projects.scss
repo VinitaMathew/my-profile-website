@@ -1,0 +1,11 @@
+.projects-container {
+  padding-top: 90px;
+  margin-bottom: 84px;
+}
+
+@media only screen and (max-width: 750px) {
+  .projects-container {
+    padding-top: 24px;
+    margin-bottom: unset;
+  }
+}

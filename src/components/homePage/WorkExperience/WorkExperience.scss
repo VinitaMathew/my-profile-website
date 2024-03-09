@@ -1,0 +1,28 @@
+.work-container {
+  margin-top: 36px;
+  .work-wrapper {
+    font-size: 18px;
+    .work-heading-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .work-container {
+    .work-wrapper {
+      font-size: 12px;
+    }
+    .work-heading-section {
+      font-size: 14px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+    ul {
+      font-size: 12px;
+    }
+  }
+}

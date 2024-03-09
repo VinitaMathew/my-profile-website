@@ -1,0 +1,129 @@
+.menu-container-desktop,
+.menu-container-mobile {
+  padding-top: 78px;
+  text-align: right;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: padding 0.3s ease-in-out;
+  .common-container {
+    display: flex;
+    max-width: 1216px;
+    justify-content: space-between;
+    margin: auto;
+    padding-inline: 25px;
+  }
+  .logo {
+    width: 125px;
+    height: auto;
+  }
+  .mobile-wrapper-menu {
+    position: fixed;
+    right: 0;
+    margin-right: 24px;
+    margin-top: -20px;
+    .menu-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      img {
+        height: 24px;
+        margin-top: 16px;
+      }
+    }
+  }
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      margin: unset;
+      .nav-link {
+        font-weight: 400;
+        font-size: 18px;
+        list-style: none;
+        cursor: pointer;
+      }
+      .link {
+        color: #000000;
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+      }
+    }
+    .external-links {
+      display: flex;
+      gap: 30px;
+      margin-right: 23px;
+      .link-img {
+        height: 24px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.menu-container-desktop.scrolled {
+  padding-top: 24px;
+  .menu-list {
+    padding-bottom: 22px;
+  }
+}
+.menu-container-desktop {
+  .menu-list {
+    .nav-links {
+      .nav-link {
+        .active {
+          position: relative;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.menu-container-mobile {
+  padding-top: 48px;
+  min-height: 42px;
+  .logo {
+    max-height: 20px;
+    margin-left: 24px;
+  }
+  .common-container {
+    .logoLink {
+      max-height: 35px;
+      position: absolute;
+      top: 43px;
+      left: 0px;
+    }
+    .mobile-wrapper-menu {
+      top: 43px;
+    }
+  }
+  .menu-list {
+    flex-direction: column;
+    margin-top: 45px;
+    width: 100%;
+    .nav-links {
+      flex-direction: column;
+      padding: unset;
+      gap: unset;
+      margin: 0px 24px 40px 0px;
+      .nav-link {
+        border-bottom: 1px solid #c4c4c4;
+        width: 100%;
+        display: flex;
+        padding: 24px 0px;
+        .active {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

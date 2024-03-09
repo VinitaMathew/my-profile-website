@@ -1,0 +1,95 @@
+.landing-section {
+  min-height: 700px;
+  //background: linear-gradient(to top, white 59%, #ffbf5f 41%);
+  background-image: url("../../../assets/landing-background.svg");
+  background-repeat: no-repeat;
+  .heading-container {
+    font-weight: 700;
+    font-size: 48px;
+    font-family: "Playfair Display ";
+    margin: 193px 0px 0px 90px;
+    line-height: 150%;
+    .title-icon {
+      position: absolute;
+      margin-left: -25px;
+    }
+    .line2 {
+      max-width: 770px;
+    }
+  }
+  .details-container {
+    display: flex;
+    margin-top: 47px;
+    margin-left: 90px;
+    gap: 20%;
+    .detail-buttons {
+      display: flex;
+      height: 70px;
+      .work-button {
+        font-weight: 700;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 60px;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        background-color: #d7e7ff;
+        border: none;
+        height: fit-content;
+        cursor: pointer;
+      }
+      .contact-button {
+        margin-left: 60px;
+        font-weight: 700;
+        font-size: 20px;
+        border: none;
+        background-color: unset;
+        cursor: pointer;
+      }
+    }
+    .description {
+      font-weight: 400;
+      font-size: 18px;
+      max-width: 480px;
+      line-height: 150%;
+      margin-top: 65px;
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .landing-section {
+    background-image: none;
+    min-height: unset;
+    .heading-container {
+      width: 75%;
+      margin: 35px 35px 20px 35px;
+      font-size: 28px;
+      line-height: 125%;
+      .title-icon {
+        margin-left: -22px;
+        width: 16px;
+      }
+    }
+    .details-container {
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+      .detail-buttons {
+        flex-direction: column;
+        .work-button {
+          font-size: 16px;
+          padding: 12px 29px;
+        }
+        .contact-button {
+          margin-left: unset;
+          margin-top: 12px;
+          font-size: 16px;
+        }
+      }
+      .description {
+        font-size: 14px;
+        margin-top: 24px;
+      }
+    }
+  }
+}

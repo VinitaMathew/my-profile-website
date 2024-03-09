@@ -1,0 +1,27 @@
+.routingContainer {
+  margin: unset;
+  font-family: "Manrope";
+  line-height: 1.5;
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 116px;
+    right: 30px;
+    background: unset;
+    border: none;
+    cursor: pointer;
+    img {
+      width: 46px;
+      height: auto;
+    }
+  }
+  .slide-up {
+    transform: translateY(-2.3rem);
+    opacity: 1;
+    transition: opacity 1s ease-out, transform 0.45s ease-out;
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}

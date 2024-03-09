@@ -1,0 +1,43 @@
+.contact-container {
+  margin-block: 34px 100px;
+  .contact-wrapper {
+    font-size: 18px;
+    .links {
+      margin-block: 43px;
+      font-size: 22px;
+      .links-wrapper {
+        align-items: center;
+        display: flex;
+        gap: 24px;
+        padding-bottom: 10px;
+        img {
+          width: 30px;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .contact-container {
+    margin-bottom: 50px;
+    .contact-wrapper {
+      font-size: 12px;
+      .links {
+        font-size: 18px;
+        margin-block: 15px;
+        .links-wrapper {
+          gap: 10px;
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.home-page {
+  font-family: "Manrope";
+  max-width: 1216px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 144px;
+  padding-inline: 25px;
+
+  .section-heading {
+    font-family: "Playfair Display ";
+    font-weight: 700;
+    font-size: 40px;
+    position: relative;
+    margin-left: 20px;
+    &:before {
+      border-left: 8px solid #6fa9ff;
+      bottom: 0;
+      content: "";
+      height: 38px;
+      left: -25px;
+      position: absolute;
+      top: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .home-page {
+    margin-top: 70px;
+    padding-inline: 12px;
+    .section-heading {
+      font-size: 20px;
+      &:before {
+        height: 24px;
+        left: -18px;
+      }
+    }
+  }
+}
